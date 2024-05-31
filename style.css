@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box; /*Good practice to use this in project*/
+}
+
+.navbar{
+    height: 60px; /*Logo Image Size*/
+    background-color: #0f1111; /*Background color*/
+    color: white; /*Font Color*/
+    display: flex; /*All div within this div will come to same line*/
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+ 
+.nav-logo{
+    height: 50px;
+    width: 100px;
+    /*Without this image will not be visible*/
+}
+
+.logo{
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+}
+
+/** box2 **/
+
+.add-first{
+    color: #cccccc;
+    /*We will give font size in rem i.e; root em, this means size will be as compared to root*/
+    /*This unit makes website responsive*/
+    font-size: 0.85rem;
+    margin-left: 15px;/*spacing from the location logo*/
+}
+
+.add-second{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;/*Fixes along cross axis*/
+    /*Cross axis means top to bottom*/
+    /*nit picking means setting up margins*/
+
+}
+
+/** box3 **/
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;/*Removes by default border of select*/
+}
+
+.search-input{
+    width: 100%;/*Provides all empty space to search input so the we have to oly set the space for select and search icon*/
+    font-size: 1rem;
+    border: none;
+
+}
+
+.search-icon{
+    width:45px;
+    display: flex;
+    justify-content: center;/*Horizontally Center*/
+    align-items: center;/*Vertically Center*/
+    font-size: 1.2rem;/*Increases the size of magnifying glass*/
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
+/** box4 **/
+
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/** box6 **/
+
+.nav-cart i{
+    font-size: 30px;
+}
+
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/** panel **/
+
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p{
+    display: inline;
+    margin-left: 15px;
+}
+
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+
+}
+
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/** hero section **/
+
+.hero-section{
+    background-image: url(hero_image.jpg);/*This only will not be visible without a height or width*/
+    background-size: cover;/*To have image visible to us*/
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;/*To bring it to bottom*/
+}
+
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.hero-msg a{
+    color: #007185;
+}
+
+/** shop section **/
+
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;/*Because of this there will be only 4 image in one row*/
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+.box{
+    /*border: 2px solid black;*/
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+
+.box-img{
+    height: 300px;
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    margin-top: 1rem;
+    margin-top: 1rem;
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem
+}
+
+.box-content{
+    color: #222f3d;
+}
+
+/** footer **/
+
+footer{
+    margin-top: 15px;
+}
+
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    display: flex;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+ul a{
+    display: block;/*all comes in a single line*/
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.foot-panel3{
+    background-color: #222f3d;
+    color: whitesmoke;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 70px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+.pages{
+    font-size: 0.8rem;
+    /* text-align: center;
+    padding-top: 25px; */
+}
+
+.copyright{
+    font-size: 0.8rem;
+    /* text-align: center;
+    padding-top: 5px; */
+}
